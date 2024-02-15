@@ -1,0 +1,105 @@
+<div class="blank-layout-container justify-content-center align-items-center bg-light-primary"style="background: url('./assets/images/background.jpg') no-repeat left top, linear-gradient(#70bfff, #93c2ff);background-size: cover;width:100%; height:100vh">
+    <div
+      class="position-relative row w-100 h-100 bg-gredient justify-content-center"
+    >
+      <div  class="col d-flex align-items-center" style="width: 100%;">
+        <mat-card class="cardWithShadow boxed-auth" style="width: 80%;">
+          <mat-card-content class="p-32">
+            <div class="text-center" >
+                <a routerLink="/dashboard" class="d-flex justify-content-center align-items-center" style="text-decoration: none;">
+                  <img
+                    src="./assets/images/logos/logo.png"
+                    width="50"
+                    height="50"
+                    class="align-middle m-2"
+                    alt="logo"
+                  />
+                  <span class="p-1 fw-bold" style="font-size: 12px; font-weight:bold; color:rgb(0, 0, 0)">AI MEDICAL PRESCRIPTION ERROR REDUCTION SYSTEM </span>
+                </a>
+              </div> 
+              <div class="d-flex justify-content-center" style="font-size: 24px; letter-spacing:0.15rem; font-weight: bold;margin-top:10px">
+                REGISTER
+            </div>
+            <form class="m-t-30" [formGroup]="registerForm" (ngSubmit)="registerUser(registerForm.value)">
+              <div class="row">
+                <div class="col-lg-6 col-md-6">
+                  <mat-label class="mat-subtitle-2 f-s-14 f-w-600 m-b-12 d-block"
+                  >First name</mat-label
+                >
+                <mat-form-field appearance="outline" class="w-100" color="primary">
+                  <input matInput type="text" class="form-control" formControlName="userFirstName" id="first_name"  />
+                </mat-form-field>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                  <mat-label class="mat-subtitle-2 f-s-14 f-w-600 m-b-12 d-block"
+                  >Last name</mat-label
+                >
+                <mat-form-field appearance="outline" class="w-100" color="primary">
+                  <input matInput type="text" class="form-control" formControlName="userLastName" id="last_name"/>
+                </mat-form-field>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                  <mat-label class="mat-subtitle-2 f-s-14 f-w-600 m-b-12 d-block">Designation</mat-label>
+                  <mat-form-field appearance="outline" class="w-100" color="primary">
+                      <mat-select formControlName="profileType">
+                          <mat-option value="Doctor">Doctor</mat-option>
+                          <mat-option value="Nurse">Nurse</mat-option>
+                          <mat-option value="Pharmacist">Pharmacist</mat-option>
+                      </mat-select>
+                  </mat-form-field>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                  <mat-label class="mat-subtitle-2 f-s-14 f-w-600 m-b-12 d-block"> courtesy titles</mat-label>
+                  <mat-form-field appearance="outline" class="w-100" color="primary">
+                      <mat-select formControlName="profileTitle" id="title">
+                          <mat-option value="Mr">Mr</mat-option>
+                          <mat-option value="Mrs">Mrs</mat-option>
+                          <mat-option value="Miss">Miss</mat-option>
+                      </mat-select>
+                  </mat-form-field>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                  <mat-label class="mat-subtitle-2 f-s-14 f-w-600 m-b-12 d-block"
+                  >Emp_ID</mat-label
+                  >
+                  <mat-form-field appearance="outline" class="w-100" color="primary">
+                  <input matInput type="text" class="form-control" formControlName="userNickname" id="empId"/>
+                  </mat-form-field>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                     <!-- password -->
+                      <mat-label class="mat-subtitle-2 f-s-14 f-w-600 m-b-12 d-block"
+                      >Password</mat-label
+                    >
+                    <mat-form-field appearance="outline" class="w-100" color="primary">
+                      <input matInput type="password" formControlName ="password" id="password"/>
+                    </mat-form-field>
+                </div>
+              </div>
+               <!-- password -->
+               <mat-label class="mat-subtitle-2 f-s-14 f-w-600 m-b-12 d-block"
+               >Confirm Password</mat-label
+             >
+             <mat-form-field appearance="outline" class="w-100" color="primary">
+               <input matInput type="password" formControlName="confirmPassword" id="confirm_password"/>
+             </mat-form-field>
+              <button type="submit" mat-flat-button color="primary" class="w-100">
+                Sign Up
+              </button>
+              <!-- input -->
+            </form>
+            <span class="d-block f-w-500 text-center m-t-24"
+              >Already have an Account?
+  
+              <a
+                class="text-decoration-none text-primary f-w-500 f-s-14"
+              >
+                Sign In</a
+              >
+            </span>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+  

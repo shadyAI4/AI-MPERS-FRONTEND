@@ -1,0 +1,60 @@
+<app-modal-header [title]="title"></app-modal-header>
+<mat-dialog-content class="mat-typography col-lg-12">
+  <p style="font-weight: bolder;">Fill the form below correctly in order to complete the registration of a new patient . Make sure you double check all the filled before saving the records. Fill all the required information.
+
+  </p>
+    <form class="">
+           <div class="row">
+              <div class="col-6">
+                <mat-label class="mat-subtitle-2 f-s-14 f-w-600 m-b-12 d-block"
+                >First name</mat-label
+              >
+              <mat-form-field appearance="outline" class="w-100" color="primary">
+                <input matInput />
+              </mat-form-field>
+              </div>
+              <div class="col-6">
+                <mat-label class="mat-subtitle-2 f-s-14 f-w-600 m-b-12 d-block"
+                >Last name</mat-label
+              >
+              <mat-form-field appearance="outline" class="w-100" color="primary">
+                <input matInput />
+              </mat-form-field>
+              </div>
+              <div class="col-6">
+                <mat-label class="mat-subtitle-2 f-s-14 f-w-600 m-b-12 d-block"
+                >Age</mat-label
+              >
+              <mat-form-field appearance="outline" class="w-100" color="primary">
+                <input matInput type="number" step="0.01" />
+              </mat-form-field>
+              </div>
+              <div class="col-6">
+                <mat-label class="mat-subtitle-2 f-s-14 f-w-600 m-b-12 d-block"
+                >Weight</mat-label
+              >
+              <mat-form-field appearance="outline" class="w-100" color="primary">
+                <input matInput type="number" step="0.01" />
+              </mat-form-field>
+              </div>
+           </div>
+               
+           
+              
+             
+              
+           
+               
+           
+                <mat-label class="mat-subtitle-2 f-s-14 f-w-600 m-b-12 d-block"
+                >Height</mat-label
+              >
+              <mat-form-field appearance="outline" class="w-100" color="primary">
+                <input matInput type="number" />
+              </mat-form-field>
+      </form>
+  </mat-dialog-content>
+  <mat-dialog-actions  class="d-flex justify-content-end" style="background-color: #f3faff;">
+    <button mat-button mat-dialog-close style="background-color: red;color:white;font-weight:bolder">Cancel</button>
+    <button mat-button [mat-dialog-close]="true" cdkFocusInitial style="background-color: #97d5ff;">Save</button>
+  </mat-dialog-actions>

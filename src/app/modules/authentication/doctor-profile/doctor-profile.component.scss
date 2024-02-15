@@ -1,0 +1,133 @@
+/* Group 3 */
+.card-profile {
+    position: absolute;
+    width: 1237px;
+    height: 783px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.big-inner-card {
+
+/* Rectangle 4 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 1031px;
+height: 783px;
+
+background: rgba(255, 255, 255, 0.7);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 15px;
+
+}
+
+
+
+/* Rectangle 3 */
+.small-card {
+    box-sizing: border-box;
+    position: absolute;
+    margin-left: -80%;
+    margin-top: 10%;
+    width: 459px;
+    height: 613px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // background: #FFFFFF;
+    // border: 1px solid #FFFFFF;
+    // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    z-index: 10;
+
+}
+.small-card2 {
+    box-sizing: border-box;
+    position: absolute;
+    margin-top: 10%;
+    width: 60%;
+    height: 50%;
+    display: flex;
+    margin-left: 15%;
+    border-radius: 15px;
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.heading {
+    border-radius: 4px;
+    background-color: #0AA8EC;
+    display: flex;
+    justify-content: center;
+    padding: 2px 10px;
+    color: white;
+    font-weight: bold;
+}
+.heading h2 {
+    letter-spacing: 0.2rem;
+}
+.info-box {
+    width: 80%;
+    height: 50%;
+    margin-top: -20px;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column ;
+    padding: 10px;
+    background: rgb(255, 255, 255,0.2);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+.inner-circle {
+    /* Ellipse 1 */
+margin-top: 10%;
+position: absolute;
+width: 279.22px;
+height: 253.81px;
+border-radius: 50%;
+background: linear-gradient(rgb(36, 188, 253,0), rgb(36, 188, 253,0.5)), url('../../../../assets/images/med5.jpg') no-repeat left top;background-size: cover;width:55%;
+box-shadow: 40px 40px 100px 10px rgba(0, 148, 255, 0.25);
+
+}
+
+.text-profile {
+    /* Dr Ester Lema */
+
+position: relative;
+width: 226.99px;
+height: 32.03px;
+margin-top: 60%;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 29px;
+letter-spacing: 0.22em;
+margin-left: 45%;
+
+color: #000000;
+
+}
+
+.person_info {
+/* Rectangle 5 */
+
+position: absolute;
+width: 687px;
+height: 49px;
+
+background: #0AA8EC;
+box-shadow: 19px 19px 100px 40px rgba(188, 223, 255, 0.25);
+border-radius: 15px;
+
+
+}
+
